@@ -1,3 +1,181 @@
-body {
-  background-color: #333;
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar-brand img {
+  width: 50px;
+  margin-left: 16px;
+}
+
+#main-title {
+  text-align: center;
+  margin: 15px 0 30px;
+}
+
+.bg-color {
+  background-color: #1089ca;
+}
+
+#back-link-container {
+  display: block;
+  width: 500px;
+  margin: 30px auto 0;
+}
+
+#back-link {
+  border: 1px solid #1089ca;
+  color: #1089ca;
+  border-radius: 4px;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+#back-link:hover {
+  background-color: #1089ca;
+  color: #fff;
+}
+
+/*====== HOME ======*/
+#contacts-table {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#contacts-table thead {
+  color: #fff;
+  background-color: #1089ca;
+}
+
+#contacts-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#contacts-table tbody td,
+#contacts-table thead th {
+  border: 1px solid #ddd;
+}
+
+#contacts-table tbody tr:hover {
+  background-color: #ddd;
+}
+
+.col-id {
+  font-weight: bold;
+}
+
+.actions {
+  text-align: right;
+  width: 150px;
+}
+
+.actions i {
+  font-size: 1.125rem;
+  margin-right: 5px;
+}
+
+.check-icon {
+  color: #1e7e34;
+}
+
+.edit-icon {
+  color: #007bff;
+}
+
+.delete-btn {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.delete-icon {
+  color: #bd2130;
+}
+
+.delete-form {
+  display: inline-block;
+}
+
+#empty-list-text {
+  text-align: center;
+}
+
+#msg {
+  color: #155724;
+  background-color: #d4edda;
+  border: 1ps solid #c3e6cb;
+  padding: 10px;
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/*====== SHOW PAGE ======*/
+#view-contact-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/*====== CREATE PAGE ======*/
+#create-form,
+#edit-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-group label {
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  margin-bottom: 14px;
+}
+
+#create-form button {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  transition: 0.3s;
+}
+
+#create-form button:hover {
+  opacity: 0.8;
+}
+
+/*====== MOBILE ======*/
+@media(max-width: 530px) {
+  header .link {
+    margin-right: 16px;
+  }
+
+  #home-link {
+    display: none;
+  }
+
+  #back-link-container {
+    display: inline-block;
+    width: 0px;
+    margin: 30px auto 0;
+    text-align: left;
+  }
+}
+
+/*====== FOOTER ======*/
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  color: #fff;
+  padding: 50px 0;
 }
